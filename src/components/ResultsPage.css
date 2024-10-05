@@ -1,0 +1,129 @@
+/* Result page styling as before */
+.result-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgb(24, 25, 25);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.result-page h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.result-page p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0;
+}
+
+/* Reuse styles for correct/incorrect tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: left;
+}
+
+th {
+  background-color: #252424;
+  font-weight: bold;
+}
+
+.retry-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.retry-button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .result-page {
+    padding: 40px;
+  }
+
+  .result-page h2 {
+    font-size: 2rem;
+  }
+
+  .result-page p,
+  .result-page li {
+    font-size: 1.8rem;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+
+  .retry-button {
+    font-size: 1.9rem;
+    padding: 12px;
+  }
+}
+
+/* Top 5 Users table */
+.top-users-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.top-users-table th,
+.top-users-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Styling for correct/incorrect answers table */
+.correct-answers-table,
+.incorrect-answers-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border: 5px solid;
+}
+
+.correct-answers-table th,
+.incorrect-answers-table th,
+.correct-answers-table td,
+.incorrect-answers-table td {
+  border: 5px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Style for the result title */
+.result-title {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white; /* You can adjust the color if needed */
+}

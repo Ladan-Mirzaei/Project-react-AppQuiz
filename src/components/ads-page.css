@@ -1,0 +1,99 @@
+/* Container styling (main box) */
+.ads-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 900px;
+  max-height: fit-content;
+  text-align: center;
+  gap: 15px; /* Add gap between items */
+  background-color: #201f1f; /* Light background for the box */
+  border: 3px solid #ddd; /* Add border to make it look like a box */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add slight shadow for depth */
+}
+
+/* Headings styling */
+.ads-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Video styling */
+video {
+  width: 100%;
+  max-height: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover effect on video */
+video:hover {
+  transform: scale(1.05);
+  filter: brightness(0.9);
+}
+
+/* Shared button styling (combined .btn and .result-btn) */
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  margin-top: 15px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  width: 100%; /* Same width for both buttons */
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  height: auto;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 700px) {
+  .ads-container {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  video {
+    height: auto; /* Video height auto for responsive design */
+  }
+
+  .btn {
+    width: 200px; /* Full width buttons on small screens */
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .ads-title {
+    font-size: 1.5rem; /* Smaller font size for heading */
+  }
+}
+
+/* Ensure icon alignment and responsiveness */
+.fas {
+  margin-left: 10px;
+}
